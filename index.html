@@ -3,81 +3,270 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nire webgunea / My website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Mi Portfolio Profesional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-light border-bottom">
-      <div class="container">
-        <a class="navbar-brand fw-semibold" href="#">Nire webgunea / My website</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aitor Renobales-Irusta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main>
-    <section id="about" class="about-me py-5">
-      <div class="container text-center">
-        <h2 class="mb-3">Honela naiz / About me</h2>
-        <div class="d-flex justify-content-center mb-3">
-          <i class="bi bi-person-circle display-3 text-secondary" aria-hidden="true"></i>
-        </div>
-        <p class="lead mb-0">Horrela naiz eta kitto.</p>
-      </div>
-    </section>
-
-    <section id="portfolio" class="portfolio py-5 bg-white">
-      <div class="container">
-        <h2 class="text-center mb-4">Portfolio</h2>
-        <div class="row g-4">
-          <div class="col-12 col-md-6 col-lg-4">
-            <a class="card h-100 shadow-sm text-decoration-none" href="#">
-              <div class="card-body text-center">
-                <i class="bi bi-bug-fill fs-1 text-primary" aria-hidden="true"></i>
-                <h3 class="h5 mt-3 mb-0">Proyecto 1</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a class="card h-100 shadow-sm text-decoration-none" href="#">
-              <div class="card-body text-center">
-                <i class="bi bi-egg-fried fs-1 text-warning" aria-hidden="true"></i>
-                <h3 class="h5 mt-3 mb-0">Proyecto 2</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <a class="card h-100 shadow-sm text-decoration-none" href="#">
-              <div class="card-body text-center">
-                <i class="bi bi-peace-fill fs-1 text-success" aria-hidden="true"></i>
-                <h3 class="h5 mt-3 mb-0">Proyecto 3</h3>
-              </div>
-            </a>
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 hero-content">
+          <h1>Kaixo, Hi</h1>
+          <p class="lead">PMP | Analyst | devops |almost PhD</p>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-custom btn-custom-primary me-3">Ver Proyectos</a>
+            <a href="#contacto" class="btn btn-custom btn-custom-outline">Contactar</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- About Section -->
+  <section id="sobre-mi" class="about">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="row mt-5">
+        <div class="col-lg-6 mb-4">
+          <p class="lead">PMP Project Management</p>
+          <p>Continuous Integration & Continuous Delivery freak</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="bi bi-code-slash"></i>
+                <h5>PM</h5>
+                <p class="mb-0 small">PRINCE2, PMP, kanban, Agile</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="bi bi-palette"></i>
+                <h5>Continuous Integration / Continuous Delivery</h5>
+                <p class="mb-0 small">Jenkins, GitLab CI, groovy, Argo CD, VaultH, Harbor</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="bi bi-server"></i>
+                <h5>PhD</h5>
+                <p class="mb-0 small">Learning Analytics, GenaI, PHP, python</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="skill-item text-center">
+                <i class="bi bi-phone"></i>
+                <h5>Observability</h5>
+                <p class="mb-0 small">OpenTelemetry, Jaeger, Loki, Prometheus, Grafana</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="footer mt-auto py-4 bg-dark text-white-50">
-    <div class="container text-center small">&copy; 2024 Ni neu</div>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-image">
+              <i class="bi bi-globe"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">AdESMuS</h3>
+              <p>Plataforma de análisis y evaluación</p>
+              <div class="project-tags">
+                <span class="project-tag">Angular</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+              <i class="bi bi-phone"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">BLUMOD</h3>
+              <p>Aplicación para diseño instruccional de cursos.</p>
+              <div class="project-tags">
+                <span class="project-tag">Moodle</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+              <i class="bi bi-graph-up"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Dashboard Analytics</h3>
+              <p>Dashboard interactivo para visualización de datos en tiempo real con gráficos personalizables y reportes automáticos.</p>
+              <div class="project-tags">
+                <span class="project-tag">Vue.js</span>
+                <span class="project-tag">D3.js</span>
+                <span class="project-tag">API</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+              <i class="bi bi-chat-dots"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Chat en Tiempo Real</h3>
+              <p>Aplicación de mensajería instantánea con salas de chat, compartir archivos y videollamadas integradas.</p>
+              <div class="project-tags">
+                <span class="project-tag">WebSocket</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">WebRTC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+              <i class="bi bi-camera"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Portfolio Fotográfico</h3>
+              <p>Galería de imágenes con efectos visuales, filtros avanzados y sistema de gestión de contenido personalizado.</p>
+              <div class="project-tags">
+                <span class="project-tag">Next.js</span>
+                <span class="project-tag">Cloudinary</span>
+                <span class="project-tag">CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="project-card">
+            <div class="project-image" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+              <i class="bi bi-cart"></i>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Delivery App</h3>
+              <p>Aplicación de pedidos a domicilio con seguimiento GPS en tiempo real, múltiples métodos de pago y sistema de reseñas.</p>
+              <div class="project-tags">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Google Maps</span>
+                <span class="project-tag">Stripe</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contacto" class="contact">
+    <div class="container text-center">
+      <h2 class="section-title text-white">Contacto</h2>
+      <p class="lead mt-4 mb-5">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="contact-info">
+            <i class="bi bi-envelope"></i>
+            <h5>Email</h5>
+            <p>tuemail@example.com</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info">
+            <i class="bi bi-telephone"></i>
+            <h5>Teléfono</h5>
+            <p>+34 600 000 000</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info">
+            <i class="bi bi-geo-alt"></i>
+            <h5>Ubicación</h5>
+            <p>Leioa, Basque Country</p>
+          </div>
+        </div>
+      </div>
+      <div class="social-links mt-5">
+        <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p class="mb-0">&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+      } else {
+        navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
+      }
+    });
+  </script>
 </body>
 </html>
