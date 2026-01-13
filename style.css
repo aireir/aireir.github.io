@@ -1,100 +1,24 @@
+/* Minimal overrides to complement Bootstrap */
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #f8f9fa;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+.navbar-brand {
+  letter-spacing: 0.2px;
 }
 
-a {
-  text-decoration: none;
-  color: #000;
+.about-me .lead {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-nav {
-  background-color: #fff;
-  border-bottom: 1px solid #ccc;
+.card:hover {
+  transform: translateY(-2px);
+  transition: transform 120ms ease;
 }
 
-nav .navbar-brand {
-  font-size: 1.5em;
-  padding: 0 15px;
-}
-
-nav .navbar-nav .nav-item .nav-link {
-  color: #000;
-  font-size: 1em;
-  padding: 0 10px;
-}
-
-nav .navbar-nav .nav-item .nav-link.active {
-  color: #202020;
-}
-
-section {
-  padding: 20px 0;
-}
-
-section .about-me {
-  text-align: center;
-}
-
-section .about-me .about-me__photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-
-section .about-me .about-me__content {
-  margin-top: 20px;
-}
-
-section .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-section .portfolio__items {
-  margin-top: 20px;
-}
-
-section .portfolio__item {
-  width: 25%;
-  margin-bottom: 20px;
-}
-
-section .portfolio__item .portfolio__item__title {
-  font-size: 1.2em;
-}
-
-section .contact {
-  text-align: left;
-}
-
-section .contact .form-group {
-  margin-bottom: 20px;
-}
-
-section .contact .form-control {
-  width: 100%;
-}
-
-section .contact .btn {
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-footer {
-  background-color: #000;
-  color: #fff;
-  padding: 20px 0;
+.footer {
   text-align: center;
 }
